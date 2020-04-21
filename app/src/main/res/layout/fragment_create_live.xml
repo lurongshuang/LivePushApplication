@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_background"
+        android:orientation="vertical">
+
+    <ImageView
+            android:layout_width="@dimen/dp_158"
+            android:layout_height="@dimen/dp_158"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_50"
+            android:src="@drawable/main_logo" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_35"
+            android:text="请选择直播源:"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_14" />
+
+    <com.xuexiang.xui.widget.spinner.materialspinner.MaterialSpinner
+            style="@style/Material.SpinnerStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:id="@+id/msUrl"
+            android:layout_marginRight="@dimen/dp_20"
+            android:enabled="true"
+            app:ms_entries="@array/sort_mode_entry" />
+
+    <com.xuexiang.xui.widget.alpha.XUIAlphaButton
+            android:id="@+id/btnLiveGo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_41"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_50"
+            android:layout_marginRight="@dimen/dp_20"
+            android:background="@drawable/shape_btn_login_w"
+            android:text="直播"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_15" />
+
+
+</LinearLayout>
